@@ -1,18 +1,28 @@
 <template>
   <div id="app">
     <div class="container">
-      <JSONComponent />
+      <!-- Commenting out the old JSON component -->
+      <!-- <JSONComponent /> -->
+
+      <!-- Referencing the LoginForm component -->
+      <LoginForm />
     </div>
   </div>
 </template>
 
 <script>
-import JSONComponent from './components/JSON.vue'
+// Importing the LoginForm component
+import LoginForm from './components/LoginForm.vue'
+
+// Commenting out the old JSON component import
+// import JSONComponent from './components/JSON.vue'
 
 export default {
   name: 'App',
   components: {
-    JSONComponent
+    // Commenting out the old JSON component
+    // JSONComponent,
+    LoginForm
   }
 }
 </script>
@@ -27,7 +37,7 @@ export default {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 20px; /* Add padding to ensure content is not touching the edges */
+  padding: 20px;
   min-height: 100vh; /* Ensure the app takes at least the full viewport height */
 }
 
